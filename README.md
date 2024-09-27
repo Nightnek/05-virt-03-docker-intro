@@ -122,10 +122,16 @@ https://hub.docker.com/repository/docker/nightnek/custom-nginx/general
   "docker-compose.yaml" с содержимым
   И выполните команду "docker compose up -d". Какой из файлов был запущен и почему?
 
-  
+  Выполнился compose.yaml, так как имя compose.yaml является именем по-умолчанию.
+  Если бы не было compose.yaml, выполнился бы ocker-compose.yaml
+  ![image](https://github.com/user-attachments/assets/57a86ce9-2b5d-4f74-b550-fb011c5a23f3)
+
 2. Отредактируйте файл compose.yaml так, чтобы были запущенны оба файла.
+![image](https://github.com/user-attachments/assets/abc38115-7d8a-454e-9eed-4adb9d88e434)
+![image](https://github.com/user-attachments/assets/772e2ccd-4444-45f5-b16d-3c95affb55f0)
 
 3. Выполните в консоли вашей хостовой ОС необходимые команды чтобы залить образ custom-nginx как custom-nginx:latest в запущенное вами, локальное registry.
+![image](https://github.com/user-attachments/assets/3ade5f45-35da-44ce-9566-609ec7a2f727)
 
 
 
