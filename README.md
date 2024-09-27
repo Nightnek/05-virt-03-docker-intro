@@ -132,20 +132,23 @@ https://hub.docker.com/repository/docker/nightnek/custom-nginx/general
 
 3. Выполните в консоли вашей хостовой ОС необходимые команды чтобы залить образ custom-nginx как custom-nginx:latest в запущенное вами, локальное registry.
 ![image](https://github.com/user-attachments/assets/3ade5f45-35da-44ce-9566-609ec7a2f727)
-
-
+![image](https://github.com/user-attachments/assets/606b3433-8970-4130-aabf-1f57a65aa7d0)
 
 4. Откройте страницу "https://127.0.0.1:9000" и произведите начальную настройку portainer.
-
-
-
+![image](https://github.com/user-attachments/assets/444b6f23-66ec-4e3a-819e-8102160033c4)
 
 5. Откройте страницу "http://127.0.0.1:9000/#!/home", выберите ваше local окружение. Перейдите на вкладку "stacks" и в "web editor" задеплойте следующий компоуз
-
-
+![image](https://github.com/user-attachments/assets/a58b8b6b-3d59-430c-977d-f2062b19b00a)
 
 6. Перейдите на страницу "http://127.0.0.1:9000/#!/2/docker/containers", выберите контейнер с nginx и нажмите на кнопку "inspect". В представлении <> Tree разверните поле "Config" и сделайте скриншот от поля "AppArmorProfile" до "Driver".
-
-
+![image](https://github.com/user-attachments/assets/bb4db375-5d56-41f2-9ce5-ef86bce91972)
 
 7. Удалите любой из манифестов компоуза(например compose.yaml). Выполните команду "docker compose up -d". Прочитайте warning, объясните суть предупреждения и выполните предложенное действие. Погасите compose-проект ОДНОЙ(обязательно!!) командой.
+![image](https://github.com/user-attachments/assets/a197bc76-10e4-41e7-ac43-e14acfb0925d)
+Мы видим сообщение о том, что найден контейнер-сирота. Предложенный флаг удалил контейнер.
+![image](https://github.com/user-attachments/assets/b94e80c9-d3f8-4781-8fad-3d81909fddfb)
+
+И гасим compose командой docker compose down
+![image](https://github.com/user-attachments/assets/d0c296c1-e34c-42dd-a451-50f4c90c6eba)
+
+   
